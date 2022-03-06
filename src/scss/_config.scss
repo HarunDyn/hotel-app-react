@@ -1,0 +1,125 @@
+$primary-color:rgb(5, 107, 224);
+$secondary-color:#ff652f;
+$white: rgb(255, 255, 255);
+$black : rgb(20, 20, 20);
+$success : #0bc0ee;
+$danger :#e1f103;
+
+@mixin footerLi {
+    margin-bottom: 3rem;
+
+
+    h3 {
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+    }
+
+    ul {
+        padding: 0;
+
+    }
+
+    ul li {
+        list-style-type: none;
+        margin-bottom: 0.5rem;
+        cursor: pointer;
+    }
+
+    @include respond(medium) {
+        margin-bottom: 0.3rem;
+        font-size: 0.8rem;
+        border-bottom: 0.3px solid rgb(219, 217, 217);
+
+
+
+        h3 {
+            margin-bottom: 0.7rem;
+
+        }
+
+        ul {
+            display: none;
+
+
+        }
+    }
+
+
+}
+
+@mixin respond($breakpoint) {
+
+
+    @if($breakpoint==large) {
+        @media (max-width: 900px) {
+            @content
+        }
+    }
+
+    @if($breakpoint==medium) {
+        @media (max-width:800px) {
+            @content
+        }
+    }
+
+    ;
+
+    @if($breakpoint==small) {
+        @media (max-width: 600px) {
+            @content
+        }
+    }
+
+    ;
+
+}
+
+@function set-text-color($color) {
+    @if (lightness($color) > 60%) {
+        @return $white;
+
+    }
+
+    @else {
+        @return $black;
+    }
+}
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+@mixin button($color) {
+    background-color: $white;
+    color: $black;
+    outline: 1px solid $color;
+    border-radius: 100px;
+    box-shadow: 3px 3px 15px rgba(44, 187, 99, .2);
+    cursor: pointer;
+    display: inline-block;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: none;
+    font-size: 16px;
+    margin-right: 0.3rem;
+
+    &:hover {
+        box-shadow: 5px 5px 15px $color;
+        transform: scale(1.05) rotate(-1deg);
+    }
+
+}
+
+@mixin center() {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

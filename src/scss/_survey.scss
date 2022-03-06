@@ -1,0 +1,61 @@
+.survey-container {
+    width: 80%;
+    height: 20%;
+    border: 2px solid black;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 15px rgb(238, 234, 234);
+
+    p {
+        margin-bottom: 1rem;
+    }
+
+    .smile {
+        background-color: white;
+        margin-right: 2rem;
+        border: none;
+
+        .smile-img {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+
+    .nps {
+        @include button($success);
+        margin-right: 1rem;
+        margin-top: 1rem
+    }
+
+    .nps-danger {
+        @include button($danger);
+        margin-right: 1rem
+    }
+
+
+    .success {
+        @include button($success);
+        margin-right: 1rem
+    }
+
+    .danger {
+        @include button($danger)
+    }
+
+}
+
+.clicked {
+    box-shadow: 3px 3px 10px $success;
+}
+
+
+.post-button {
+    @include button($success);
+    margin: 1rem;
+}

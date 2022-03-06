@@ -1,0 +1,32 @@
+.discount {
+    position: relative;
+    width: 100%;
+    color: white;
+    background: linear-gradient(45deg, red, blue);
+    @include center;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1.2rem 0;
+    font-size: 1.3rem;
+
+
+
+    button {
+        position: absolute;
+        top: 1.2rem;
+        right: 1rem;
+        padding: 0 0.5rem;
+        color: white;
+        background-color: $primary-color;
+        border-radius: 50%;
+
+        border: none;
+        outline: 1px solid white;
+
+    }
+
+    @include respond(medium) {
+        display: none;
+    }
+
+}

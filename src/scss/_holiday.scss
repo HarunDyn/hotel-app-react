@@ -1,0 +1,84 @@
+.holiday {
+
+
+
+    &__items {
+        width: 90vw;
+        margin: 2rem auto 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 4rem;
+
+
+
+        @include respond(medium) {
+            grid-template-columns: 1fr 1fr;
+            width: 80vw;
+        }
+
+        @include respond(small) {
+            grid-template-columns: 1fr;
+            width: 80vw;
+        }
+    }
+
+    &__item {
+        position: relative;
+        border-bottom: 5px solid $success;
+        overflow: hidden;
+        cursor: pointer;
+
+        img {
+            width: 100%;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: $success;
+            opacity: 0;
+            @include transition-ease;
+        }
+
+        &:hover {
+            &::after {
+                top: 0;
+                opacity: 0.9;
+            }
+
+            .holiday__btn {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__btns {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        text-align: center;
+    }
+
+    &__btn {
+        opacity: 0;
+        font-size: 1.2rem;
+        color: set-text-color($black);
+        @include transition-ease;
+
+        &:hover {
+            color: set-text-color(set-text-color($white));
+        }
+    }
+
+
+
+}
