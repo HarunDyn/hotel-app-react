@@ -16,7 +16,7 @@ function Room({ data }) {
     <>
       <Card style={{ width: "100%", margin: "auto" }}>
         <Card.Body style={{ display: "flex" }}>
-          <Row md={1} className="g-2" style={{ width: "80vw" }}>
+          <Row xs={1} md={1} className="g-2" style={{ width: "80vw" }}>
             <Col>
               <Card.Img
                 variant="top"

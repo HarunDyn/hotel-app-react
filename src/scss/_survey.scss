@@ -12,6 +12,7 @@
     border-radius: 1rem;
     box-shadow: 3px 3px 15px rgb(238, 234, 234);
 
+
     p {
         margin-bottom: 1rem;
     }
@@ -24,13 +25,20 @@
         .smile-img {
             width: 2rem;
             height: 2rem;
+
+
         }
     }
 
     .nps {
         @include button($success);
         margin-right: 1rem;
-        margin-top: 1rem
+        margin-top: 1rem;
+
+        @include respond(medium) {
+            margin-right: 0.5rem;
+            margin-top: 0.5rem;
+        }
     }
 
     .nps-danger {
@@ -46,6 +54,11 @@
 
     .danger {
         @include button($danger)
+    }
+
+    @include respond(medium) {
+        width: 100%;
+
     }
 
 }

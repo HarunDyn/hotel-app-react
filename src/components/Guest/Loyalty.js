@@ -10,7 +10,7 @@ function Loyalty({ data }) {
         Loyalty Card
       </Card.Title>
       <Card.Body style={{ display: "flex" }}>
-        <Row md={1} className="g-2" style={{ width: "80vw" }}>
+        <Row xs={1} md={1} className="g-2" style={{ width: "80vw" }}>
           <Col>
             <Card.Img
               variant="top"
