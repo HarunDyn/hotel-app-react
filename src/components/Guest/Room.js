@@ -22,7 +22,7 @@ function Room({ data }) {
         }}
       >
         <Card.Body style={{ display: "flex" }}>
-          <Row xs={1} md={1} className="g-2" style={{ width: "100vw" }}>
+          <Row xs={1} md={1} className="g-4" style={{ width: "100vw" }}>
             <Col>
               <Card.Img
                 variant="top"
@@ -59,7 +59,7 @@ function Room({ data }) {
       <Row
         xs={1}
         md={2}
-        className="g-4"
+        className="g-1"
         style={{ width: "80vw", margin: "auto" }}
       >
         <Col>

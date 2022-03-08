@@ -34,7 +34,12 @@ function NpsSurvey({ surveyData, setPostData }) {
       setPostData((prev) => [...prev, result]);
       setID(true);
     }
-    setTimeout(() => (e.target.style.backgroundColor = "#0bc0ee"), 0); // :)
+    setTimeout(
+      () =>
+        (e.target.style.backgroundColor =
+          answer_numeric > 5 ? "#0bc0ee" : "#e1f103"),
+      0
+    ); // :)
   };
 
   return surveyData ? (

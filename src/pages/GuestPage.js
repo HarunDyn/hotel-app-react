@@ -29,8 +29,8 @@ function Guest() {
     <div
       className="guestContainer"
       style={{
-        padding: "3rem",
-        width: "90vw",
+        padding: "1rem",
+        width: "100vw",
         margin: "auto",
         fontWeight: "600",
       }}
