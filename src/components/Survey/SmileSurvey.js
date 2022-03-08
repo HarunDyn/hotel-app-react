@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import bir from "../../assets/images/bir.png";
 import iki from "../../assets/images/iki.png";
 import üç from "../../assets/images/üç.png";
