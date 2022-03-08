@@ -810,9 +810,9 @@ footer .footer .takip .input div {
   -ms-flex-direction: row;
       flex-direction: row;
   justify-content: center;
-  padding: 1.2rem 0;
-  font-size: 1.3rem;
-  z-index: 1000;
+  padding: 1rem 0;
+  font-size: 1rem;
+  z-index: 5;
 }
 
 .discount button {
