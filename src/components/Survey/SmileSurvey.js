@@ -41,7 +41,7 @@ function SmileSurvey({ surveyData, setPostData, setGlobal, global }) {
     }
     if (e.target.parentElement.className === "smile") {
       setTimeout(
-        () => (e.target.parentElement.style.backgroundColor = "green"),
+        () => (e.target.parentElement.style.backgroundColor = "#0bc0ee"),
         0
       );
     }
