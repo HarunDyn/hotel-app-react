@@ -26,6 +26,7 @@ function Survey() {
       },
     });
     setSurveyData(res.data);
+    console.log(res.data);
   };
 
   const handleSubmitSurvey = async (e) => {
@@ -47,6 +48,7 @@ function Survey() {
 
       setResultData(res.data);
       setShow(true);
+      console.log(res.data);
     } catch (err) {
       console.log(err);
     }

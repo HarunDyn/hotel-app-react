@@ -55,7 +55,7 @@ function Modal({ resultData, setShow }) {
             }}
             id="cancelBtn"
           >
-            Cancel
+            Back
           </button>
         </div>
       </div>

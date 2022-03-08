@@ -30,7 +30,7 @@ function Guest() {
       className="guestContainer"
       style={{
         padding: "1rem",
-        width: "100vw",
+        width: "95vw",
         margin: "auto",
         fontWeight: "600",
       }}
