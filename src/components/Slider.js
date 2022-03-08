@@ -7,7 +7,7 @@ function Slider() {
       <Carousel.Item>
         <img
           className="d-block w-100 h-40"
-          style={{ height: "30rem" }}
+          style={{ height: "25rem" }}
           src="https://images.etstur.com/files/images/hotelImages/TR/95763/l/Granada-Luxury-Belek-Genel-257544.jpg"
           alt="First slide"
         />
@@ -19,7 +19,7 @@ function Slider() {
       <Carousel.Item>
         <img
           className="d-block w-100 h-10"
-          style={{ height: "30rem" }}
+          style={{ height: "25rem" }}
           src="https://i.neredekal.com/i/neredekal/60273c72ff3ffdca374bd3f1"
           alt="Second slide"
         />
@@ -32,7 +32,7 @@ function Slider() {
       <Carousel.Item>
         <img
           className="d-block w-100 h-40"
-          style={{ height: "30rem" }}
+          style={{ height: "25rem" }}
           src="https://i.neredekal.com/i/neredekal/60331ec8644a375968b35853"
           alt="Third slide"
         />

@@ -22,7 +22,7 @@ function NavbarSection({ userProfile }) {
           <img
             src="https://icibot.com/wp-content/uploads/2021/01/icibot_blue_130__.png"
             width="120"
-            height="60"
+            height="50"
             className="d-inline-block align-top"
             alt="img logo"
             style={{ cursor: "pointer" }}
