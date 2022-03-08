@@ -18,7 +18,9 @@ function Personal({ data }) {
   } = data;
 
   return data ? (
-    <Card style={{ width: "100%", margin: "auto" }}>
+    <Card
+      style={{ width: "100%", margin: "auto", boxShadow: "3px 3px 10px #000" }}
+    >
       <Card.Img
         variant="top"
         src={profile_pic_url}
@@ -38,7 +40,7 @@ function Personal({ data }) {
         >
           <span>
             {" "}
-            <strong>Fullname: </strong>
+            <strong className="box">Fullname: </strong>
             {first_name} {last_name}
           </span>
           {e_mail}
@@ -47,23 +49,25 @@ function Personal({ data }) {
       <ListGroup className="list-group-flush">
         <ListGroupItem>
           <FcManager className="iconPersonal" />
-          Guest id: {id}
+          <span className="box">Guest id:</span> {id}
         </ListGroupItem>
         <ListGroupItem>
           <FaHome className="iconPersonal" />
-          Locale: {locale}
+          <span className="box">Locale : </span>
+          {locale}
         </ListGroupItem>
         <ListGroupItem>
           <FcTwoSmartphones className="iconPersonal" />
-          Phone No: {phone_no}
+          <span className="box">Phone No :</span> {phone_no}
         </ListGroupItem>
         <ListGroupItem>
           <FaBirthdayCake className="iconPersonal" />
-          birth: {date_of_birth.slice(0, 10)}
+          <span className="box">birth :</span> {date_of_birth.slice(0, 10)}
         </ListGroupItem>
         <ListGroupItem>
           <MdCelebration className="iconPersonal" />
-          wedding: {wedding_anniversary.slice(0, 10)}
+          <span className="box">wedding :</span>{" "}
+          {wedding_anniversary.slice(0, 10)}
         </ListGroupItem>
       </ListGroup>
     </Card>

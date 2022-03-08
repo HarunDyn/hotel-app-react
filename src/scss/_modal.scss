@@ -66,13 +66,32 @@
                 height: 45px;
                 margin: 10px;
                 border: none;
-                background-color: cornflowerblue;
+                background-color: rgb(197, 6, 6);
                 color: white;
                 border-radius: 8px;
                 font-size: 20px;
                 cursor: pointer;
-                background-color: $primary-color;
+
+                &:hover {
+                    outline: 3px solid rgb(197, 6, 6);
+                    outline-offset: 2px;
+                    border: 1px solid white;
+                    @include transition-ease
+                }
+
+
+
             }
+
+            .urlButton {
+                &:hover {
+                    outline: 3px solid #0bc0ee;
+                    outline-offset: 2px;
+                    border: 1px solid white;
+                    @include transition-ease
+                }
+            }
+
         }
 
 

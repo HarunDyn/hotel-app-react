@@ -8,9 +8,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
     border-radius: 1rem;
-    box-shadow: 3px 3px 15px rgb(238, 234, 234);
+    box-shadow: 3px 3px 10px rgb(17, 17, 17);
 
 
     p {
@@ -19,14 +19,16 @@
 
     .smile {
         background-color: white;
-        margin-right: 2rem;
+        margin-right: 3rem;
         border: none;
+        padding: 0.4rem;
+        border-radius: 50%;
 
         .smile-img {
             width: 2rem;
             height: 2rem;
-
-
+            border-radius: 50%;
+            margin: 0.2rem
         }
     }
 
@@ -64,7 +66,8 @@
 }
 
 .clicked {
-    box-shadow: 3px 3px 10px $success;
+    box-shadow: 5px 5px 15px $success;
+    border: none;
 }
 
 

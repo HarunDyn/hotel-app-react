@@ -3,11 +3,13 @@ import { useNavigate } from "react-router-dom";
 
 function Modal({ resultData, setShow }) {
   const success = resultData.survey_result > 7;
-  let colorbg = success ? "#0bc0ee" : "#e1f103";
+  let colorbg = success
+    ? "linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%)"
+    : "radial-gradient(circle farthest-side, #fceabb, #f8b500)";
   const navigate = useNavigate();
 
   return (
-    <div className="modal-bg" style={{ backgroundColor: colorbg }}>
+    <div className="modal-bg" style={{ background: colorbg }}>
       <div className="modal-container">
         <div className="close-button">
           <button
@@ -27,12 +29,25 @@ function Modal({ resultData, setShow }) {
             ? resultData.survey_header.thanks_message_for_positive_reviews
             : resultData.survey_header.thanks_message_for_negative_reviews}
         </div>
-        <div className="link" style={{ display: success ? "block" : "none" }}>
-          <a href={resultData.survey_header.positive_redirect_urls}>
-            Yorum bırakın
-          </a>
-        </div>
+
         <div className="footer">
+          <button
+            style={{
+              display: success ? "block" : "none",
+              backgroundColor: "#0bc0ee",
+            }}
+            className="urlButton"
+          >
+            <a
+              href={resultData.survey_header.positive_redirect_urls}
+              style={{
+                color: "white",
+                textDecoration: "none",
+              }}
+            >
+              Comment
+            </a>
+          </button>
           <button
             onClick={() => {
               setShow(false);

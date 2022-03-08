@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
 footer {
   background-color: #fafafa;
   padding: 3rem 1rem 0 1rem;
@@ -16,6 +17,7 @@ footer .footer {
 
 footer .footer .kurumsal {
   margin-bottom: 3rem;
+  margin-right: 1rem;
 }
 
 footer .footer .kurumsal h3 {
@@ -34,6 +36,7 @@ footer .footer .kurumsal h3 {
 
 footer .footer .kurumsal ul {
   padding: 0;
+  color: #61656e;
 }
 
 footer .footer .kurumsal ul li {
@@ -42,7 +45,7 @@ footer .footer .kurumsal ul li {
   cursor: pointer;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   footer .footer .kurumsal {
     margin-bottom: 0.3rem;
     font-size: 0.8rem;
@@ -50,6 +53,8 @@ footer .footer .kurumsal ul li {
   }
   footer .footer .kurumsal h3 {
     margin-bottom: 0.7rem;
+    font-size: 1.3rem;
+    cursor: pointer;
   }
   footer .footer .kurumsal ul {
     display: none;
@@ -58,6 +63,7 @@ footer .footer .kurumsal ul li {
 
 footer .footer .Kampanyalar {
   margin-bottom: 3rem;
+  margin-right: 1rem;
 }
 
 footer .footer .Kampanyalar h3 {
@@ -76,6 +82,7 @@ footer .footer .Kampanyalar h3 {
 
 footer .footer .Kampanyalar ul {
   padding: 0;
+  color: #61656e;
 }
 
 footer .footer .Kampanyalar ul li {
@@ -84,7 +91,7 @@ footer .footer .Kampanyalar ul li {
   cursor: pointer;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   footer .footer .Kampanyalar {
     margin-bottom: 0.3rem;
     font-size: 0.8rem;
@@ -92,6 +99,8 @@ footer .footer .Kampanyalar ul li {
   }
   footer .footer .Kampanyalar h3 {
     margin-bottom: 0.7rem;
+    font-size: 1.3rem;
+    cursor: pointer;
   }
   footer .footer .Kampanyalar ul {
     display: none;
@@ -100,6 +109,7 @@ footer .footer .Kampanyalar ul li {
 
 footer .footer .yardım {
   margin-bottom: 3rem;
+  margin-right: 1rem;
 }
 
 footer .footer .yardım h3 {
@@ -118,6 +128,7 @@ footer .footer .yardım h3 {
 
 footer .footer .yardım ul {
   padding: 0;
+  color: #61656e;
 }
 
 footer .footer .yardım ul li {
@@ -126,7 +137,7 @@ footer .footer .yardım ul li {
   cursor: pointer;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   footer .footer .yardım {
     margin-bottom: 0.3rem;
     font-size: 0.8rem;
@@ -134,6 +145,8 @@ footer .footer .yardım ul li {
   }
   footer .footer .yardım h3 {
     margin-bottom: 0.7rem;
+    font-size: 1.3rem;
+    cursor: pointer;
   }
   footer .footer .yardım ul {
     display: none;
@@ -142,6 +155,7 @@ footer .footer .yardım ul li {
 
 footer .footer .iletişim {
   margin-bottom: 3rem;
+  margin-right: 1rem;
 }
 
 footer .footer .iletişim h3 {
@@ -160,6 +174,7 @@ footer .footer .iletişim h3 {
 
 footer .footer .iletişim ul {
   padding: 0;
+  color: #61656e;
 }
 
 footer .footer .iletişim ul li {
@@ -168,7 +183,7 @@ footer .footer .iletişim ul li {
   cursor: pointer;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   footer .footer .iletişim {
     margin-bottom: 0.3rem;
     font-size: 0.8rem;
@@ -176,6 +191,8 @@ footer .footer .iletişim ul li {
   }
   footer .footer .iletişim h3 {
     margin-bottom: 0.7rem;
+    font-size: 1.3rem;
+    cursor: pointer;
   }
   footer .footer .iletişim ul {
     display: none;
@@ -184,9 +201,14 @@ footer .footer .iletişim ul li {
 
 footer .footer .iletişim address {
   margin-bottom: 1rem;
+  color: #61656e;
 }
 
-@media (max-width: 800px) {
+footer .footer .iletişim p {
+  color: #61656e;
+}
+
+@media (max-width: 900px) {
   footer .footer .iletişim address {
     display: none;
     margin-bottom: 0.2rem;
@@ -198,6 +220,7 @@ footer .footer .iletişim address {
 
 footer .footer .takip {
   margin-bottom: 3rem;
+  margin-right: 1rem;
 }
 
 footer .footer .takip h3 {
@@ -216,6 +239,7 @@ footer .footer .takip h3 {
 
 footer .footer .takip ul {
   padding: 0;
+  color: #61656e;
 }
 
 footer .footer .takip ul li {
@@ -224,7 +248,7 @@ footer .footer .takip ul li {
   cursor: pointer;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   footer .footer .takip {
     margin-bottom: 0.3rem;
     font-size: 0.8rem;
@@ -232,6 +256,8 @@ footer .footer .takip ul li {
   }
   footer .footer .takip h3 {
     margin-bottom: 0.7rem;
+    font-size: 1.3rem;
+    cursor: pointer;
   }
   footer .footer .takip ul {
     display: none;
@@ -256,6 +282,7 @@ footer .footer .takip .social-medias-top a:hover {
 
 footer .footer .takip p {
   margin-bottom: 0.5rem;
+  color: #61656e;
 }
 
 footer .footer .takip .input {
@@ -281,9 +308,10 @@ footer .footer .takip .input div {
   color: white;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   footer .footer .takip .social-medias-top {
     margin-bottom: 0;
+    font-size: 10px;
   }
   footer .footer .takip .takip-social {
     display: -webkit-box;
@@ -298,7 +326,7 @@ footer .footer .takip .input div {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   footer .footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -352,10 +380,10 @@ footer .footer .takip .input div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 2rem;
+  margin-top: 3rem;
   border-radius: 1rem;
-  -webkit-box-shadow: 3px 3px 15px #eeeaea;
-          box-shadow: 3px 3px 15px #eeeaea;
+  -webkit-box-shadow: 3px 3px 10px #111111;
+          box-shadow: 3px 3px 10px #111111;
 }
 
 .survey-container p {
@@ -364,13 +392,17 @@ footer .footer .takip .input div {
 
 .survey-container .smile {
   background-color: white;
-  margin-right: 2rem;
+  margin-right: 3rem;
   border: none;
+  padding: 0.4rem;
+  border-radius: 50%;
 }
 
 .survey-container .smile .smile-img {
   width: 2rem;
   height: 2rem;
+  border-radius: 50%;
+  margin: 0.2rem;
 }
 
 .survey-container .nps {
@@ -378,8 +410,8 @@ footer .footer .takip .input div {
   color: #141414;
   outline: 1px solid #0bc0ee;
   border-radius: 100px;
-  -webkit-box-shadow: 3px 3px 15px rgba(44, 187, 99, 0.2);
-          box-shadow: 3px 3px 15px rgba(44, 187, 99, 0.2);
+  -webkit-box-shadow: 5px 5px 15px rgba(44, 187, 99, 0.2);
+          box-shadow: 5px 5px 15px rgba(44, 187, 99, 0.2);
   cursor: pointer;
   display: inline-block;
   padding: 7px 20px;
@@ -395,10 +427,21 @@ footer .footer .takip .input div {
 }
 
 .survey-container .nps:hover {
+  -webkit-box-shadow: 3px 3px 10px #0bc0ee;
+          box-shadow: 3px 3px 10px #0bc0ee;
+}
+
+.survey-container .nps:active {
   -webkit-box-shadow: 5px 5px 15px #0bc0ee;
           box-shadow: 5px 5px 15px #0bc0ee;
-  -webkit-transform: scale(1.05) rotate(-1deg);
-          transform: scale(1.05) rotate(-1deg);
+  background-color: #0bc0ee;
+}
+
+@media (max-width: 800px) {
+  .survey-container .nps {
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+  }
 }
 
 .survey-container .nps-danger {
@@ -406,8 +449,8 @@ footer .footer .takip .input div {
   color: #141414;
   outline: 1px solid #e1f103;
   border-radius: 100px;
-  -webkit-box-shadow: 3px 3px 15px rgba(44, 187, 99, 0.2);
-          box-shadow: 3px 3px 15px rgba(44, 187, 99, 0.2);
+  -webkit-box-shadow: 5px 5px 15px rgba(44, 187, 99, 0.2);
+          box-shadow: 5px 5px 15px rgba(44, 187, 99, 0.2);
   cursor: pointer;
   display: inline-block;
   padding: 7px 20px;
@@ -422,10 +465,14 @@ footer .footer .takip .input div {
 }
 
 .survey-container .nps-danger:hover {
+  -webkit-box-shadow: 3px 3px 10px #e1f103;
+          box-shadow: 3px 3px 10px #e1f103;
+}
+
+.survey-container .nps-danger:active {
   -webkit-box-shadow: 5px 5px 15px #e1f103;
           box-shadow: 5px 5px 15px #e1f103;
-  -webkit-transform: scale(1.05) rotate(-1deg);
-          transform: scale(1.05) rotate(-1deg);
+  background-color: #e1f103;
 }
 
 .survey-container .success {
@@ -433,8 +480,8 @@ footer .footer .takip .input div {
   color: #141414;
   outline: 1px solid #0bc0ee;
   border-radius: 100px;
-  -webkit-box-shadow: 3px 3px 15px rgba(44, 187, 99, 0.2);
-          box-shadow: 3px 3px 15px rgba(44, 187, 99, 0.2);
+  -webkit-box-shadow: 5px 5px 15px rgba(44, 187, 99, 0.2);
+          box-shadow: 5px 5px 15px rgba(44, 187, 99, 0.2);
   cursor: pointer;
   display: inline-block;
   padding: 7px 20px;
@@ -449,10 +496,14 @@ footer .footer .takip .input div {
 }
 
 .survey-container .success:hover {
+  -webkit-box-shadow: 3px 3px 10px #0bc0ee;
+          box-shadow: 3px 3px 10px #0bc0ee;
+}
+
+.survey-container .success:active {
   -webkit-box-shadow: 5px 5px 15px #0bc0ee;
           box-shadow: 5px 5px 15px #0bc0ee;
-  -webkit-transform: scale(1.05) rotate(-1deg);
-          transform: scale(1.05) rotate(-1deg);
+  background-color: #0bc0ee;
 }
 
 .survey-container .danger {
@@ -460,8 +511,8 @@ footer .footer .takip .input div {
   color: #141414;
   outline: 1px solid #e1f103;
   border-radius: 100px;
-  -webkit-box-shadow: 3px 3px 15px rgba(44, 187, 99, 0.2);
-          box-shadow: 3px 3px 15px rgba(44, 187, 99, 0.2);
+  -webkit-box-shadow: 5px 5px 15px rgba(44, 187, 99, 0.2);
+          box-shadow: 5px 5px 15px rgba(44, 187, 99, 0.2);
   cursor: pointer;
   display: inline-block;
   padding: 7px 20px;
@@ -475,15 +526,26 @@ footer .footer .takip .input div {
 }
 
 .survey-container .danger:hover {
+  -webkit-box-shadow: 3px 3px 10px #e1f103;
+          box-shadow: 3px 3px 10px #e1f103;
+}
+
+.survey-container .danger:active {
   -webkit-box-shadow: 5px 5px 15px #e1f103;
           box-shadow: 5px 5px 15px #e1f103;
-  -webkit-transform: scale(1.05) rotate(-1deg);
-          transform: scale(1.05) rotate(-1deg);
+  background-color: #e1f103;
+}
+
+@media (max-width: 800px) {
+  .survey-container {
+    width: 100%;
+  }
 }
 
 .clicked {
-  -webkit-box-shadow: 3px 3px 10px #0bc0ee;
-          box-shadow: 3px 3px 10px #0bc0ee;
+  -webkit-box-shadow: 5px 5px 15px #0bc0ee;
+          box-shadow: 5px 5px 15px #0bc0ee;
+  border: none;
 }
 
 .post-button {
@@ -491,8 +553,8 @@ footer .footer .takip .input div {
   color: #141414;
   outline: 1px solid #0bc0ee;
   border-radius: 100px;
-  -webkit-box-shadow: 3px 3px 15px rgba(44, 187, 99, 0.2);
-          box-shadow: 3px 3px 15px rgba(44, 187, 99, 0.2);
+  -webkit-box-shadow: 5px 5px 15px rgba(44, 187, 99, 0.2);
+          box-shadow: 5px 5px 15px rgba(44, 187, 99, 0.2);
   cursor: pointer;
   display: inline-block;
   padding: 7px 20px;
@@ -507,10 +569,14 @@ footer .footer .takip .input div {
 }
 
 .post-button:hover {
+  -webkit-box-shadow: 3px 3px 10px #0bc0ee;
+          box-shadow: 3px 3px 10px #0bc0ee;
+}
+
+.post-button:active {
   -webkit-box-shadow: 5px 5px 15px #0bc0ee;
           box-shadow: 5px 5px 15px #0bc0ee;
-  -webkit-transform: scale(1.05) rotate(-1deg);
-          transform: scale(1.05) rotate(-1deg);
+  background-color: #0bc0ee;
 }
 
 .modal-bg {
@@ -613,12 +679,27 @@ footer .footer .takip .input div {
   height: 45px;
   margin: 10px;
   border: none;
-  background-color: cornflowerblue;
+  background-color: #c50606;
   color: white;
   border-radius: 8px;
   font-size: 20px;
   cursor: pointer;
-  background-color: #056be0;
+}
+
+.modal-bg .modal-container .footer button:hover {
+  outline: 3px solid #c50606;
+  outline-offset: 2px;
+  border: 1px solid white;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.modal-bg .modal-container .footer .urlButton:hover {
+  outline: 3px solid #0bc0ee;
+  outline-offset: 2px;
+  border: 1px solid white;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .holiday__items {
@@ -731,6 +812,7 @@ footer .footer .takip .input div {
   justify-content: center;
   padding: 1.2rem 0;
   font-size: 1.3rem;
+  z-index: 1000;
 }
 
 .discount button {
@@ -756,6 +838,7 @@ footer .footer .takip .input div {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -801,5 +884,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.box {
+  background-color: rgba(117, 119, 124, 0.1);
+  padding: 0.2rem 0.3rem;
+  margin-right: 0.7rem;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=main.css.map */

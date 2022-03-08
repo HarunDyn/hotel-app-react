@@ -14,9 +14,15 @@ function Room({ data }) {
 
   return data ? (
     <>
-      <Card style={{ width: "100%", margin: "auto" }}>
+      <Card
+        style={{
+          width: "100%",
+          margin: "auto",
+          boxShadow: "1px 1px 3px #000",
+        }}
+      >
         <Card.Body style={{ display: "flex" }}>
-          <Row xs={1} md={1} className="g-2" style={{ width: "80vw" }}>
+          <Row xs={1} md={1} className="g-2" style={{ width: "100vw" }}>
             <Col>
               <Card.Img
                 variant="top"
@@ -26,16 +32,24 @@ function Room({ data }) {
             </Col>
             <Col>
               <ListGroup className="list-group-flush" style={{ width: "80%" }}>
-                <ListGroupItem>Hotel ID: {hotel_id} </ListGroupItem>
-                <ListGroupItem>Room No : {room_no}</ListGroupItem>
                 <ListGroupItem>
-                  Booking Date : {booking_date.slice(0, 10)}
+                  <span className="box">Hotel ID :</span> {hotel_id}{" "}
                 </ListGroupItem>
                 <ListGroupItem>
-                  Release Date : {release_date.slice(0, 10)}
+                  <span className="box">Room No : </span>
+                  {room_no}
                 </ListGroupItem>
                 <ListGroupItem>
-                  Entry Date : {entry_date.slice(0, 10)}
+                  <span className="box">Booking Date :</span>{" "}
+                  {booking_date.slice(0, 10)}
+                </ListGroupItem>
+                <ListGroupItem>
+                  <span className="box">Release Date :</span>{" "}
+                  {release_date.slice(0, 10)}
+                </ListGroupItem>
+                <ListGroupItem>
+                  <span className="box">Entry Date :</span>{" "}
+                  {entry_date.slice(0, 10)}
                 </ListGroupItem>
               </ListGroup>
             </Col>
@@ -49,7 +63,7 @@ function Room({ data }) {
         style={{ width: "80vw", margin: "auto" }}
       >
         <Col>
-          <Card>
+          <Card style={{ boxShadow: "3px 3px 5px #000", marginTop: "2rem" }}>
             <Card.Img
               variant="top"
               style={{ height: "15rem" }}
@@ -61,7 +75,7 @@ function Room({ data }) {
           </Card>
         </Col>
         <Col>
-          <Card>
+          <Card style={{ boxShadow: "3px 3px 5px #000", marginTop: "2rem" }}>
             <Card.Img
               variant="top"
               style={{ height: "15rem" }}

@@ -1,18 +1,19 @@
 @import "config", "footer", "survey", "modal", "holiday", "discount";
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat',
+        sans-serif;
 }
 
 body {
     max-height: 100vh;
 
 }
-
-
 
 
 .surveyContainer {
@@ -34,4 +35,11 @@ body {
 
 .loading {
     @include center
+}
+
+.box {
+    background-color: rgba(117, 119, 124, 0.1);
+    padding: 0.2rem 0.3rem;
+    margin-right: 0.7rem;
+    border-radius: 5px;
 }

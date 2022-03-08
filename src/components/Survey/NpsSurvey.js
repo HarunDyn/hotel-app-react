@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import { postType } from "./postType";
 
-function NpsSurvey({ surveyData, setPostData, postData }) {
+function NpsSurvey({ surveyData, setPostData }) {
   const [id, setID] = useState(false);
+  const [global, setGlobal] = useState(true);
   let clickedItem = id ? "survey-container clicked" : "survey-container";
 
   const handleNpsSurvey = (e) => {
     e.preventDefault();
+    setGlobal(!global);
     const answer = e.target.innerText;
     const answer_numeric = Number(e.target.innerText);
     if (id) {
@@ -32,6 +34,7 @@ function NpsSurvey({ surveyData, setPostData, postData }) {
       setPostData((prev) => [...prev, result]);
       setID(true);
     }
+    setTimeout(() => (e.target.style.backgroundColor = "#0bc0ee"), 0); // :)
   };
 
   return surveyData ? (
@@ -39,18 +42,24 @@ function NpsSurvey({ surveyData, setPostData, postData }) {
       <p>{surveyData?.question}</p>
       <div>
         {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item) => (
-          <Button value={item} key={item} handleNpsSurvey={handleNpsSurvey} />
+          <Button
+            value={item}
+            key={item}
+            global={global}
+            handleNpsSurvey={handleNpsSurvey}
+          />
         ))}
       </div>
     </div>
   ) : null;
 }
 
-function Button({ value, handleNpsSurvey }) {
+function Button({ global, value, handleNpsSurvey }) {
   return (
     <button
-      className={value > 5 ? "nps" : "nps-danger"}
+      className={value > 5 ? `nps ${value}` : `nps-danger ${value}`}
       onClick={handleNpsSurvey}
+      style={{ backgroundColor: global ? "#fff" : " #fff" }}
     >
       {value}
     </button>

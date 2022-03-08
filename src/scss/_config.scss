@@ -7,6 +7,7 @@ $danger :#e1f103;
 
 @mixin footerLi {
     margin-bottom: 3rem;
+    margin-right: 1rem;
 
 
     h3 {
@@ -15,10 +16,12 @@ $danger :#e1f103;
         flex-direction: column;
         justify-content: flex-end;
 
+
     }
 
     ul {
         padding: 0;
+        color: #61656e;
 
     }
 
@@ -28,7 +31,7 @@ $danger :#e1f103;
         cursor: pointer;
     }
 
-    @include respond(medium) {
+    @include respond(large) {
         margin-bottom: 0.3rem;
         font-size: 0.8rem;
         border-bottom: 0.3px solid rgb(219, 217, 217);
@@ -37,6 +40,8 @@ $danger :#e1f103;
 
         h3 {
             margin-bottom: 0.7rem;
+            font-size: 1.3rem;
+            cursor: pointer;
 
         }
 
@@ -99,7 +104,7 @@ $danger :#e1f103;
     color: $black;
     outline: 1px solid $color;
     border-radius: 100px;
-    box-shadow: 3px 3px 15px rgba(44, 187, 99, .2);
+    box-shadow: 5px 5px 15px rgba(44, 187, 99, .2);
     cursor: pointer;
     display: inline-block;
     padding: 7px 20px;
@@ -111,8 +116,13 @@ $danger :#e1f103;
     margin-right: 0.3rem;
 
     &:hover {
+        box-shadow: 3px 3px 10px $color;
+        // transform: scale(1.05) rotate(-1deg);
+    }
+
+    &:active {
         box-shadow: 5px 5px 15px $color;
-        transform: scale(1.05) rotate(-1deg);
+        background-color: $color;
     }
 
 }

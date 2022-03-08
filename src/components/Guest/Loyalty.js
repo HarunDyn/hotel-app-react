@@ -5,7 +5,14 @@ function Loyalty({ data }) {
   const { loyalty_info } = data;
 
   return data ? (
-    <Card style={{ width: "100%", margin: "auto", marginBottom: "2rem" }}>
+    <Card
+      style={{
+        width: "100%",
+        margin: "auto",
+        marginBottom: "2rem",
+        boxShadow: "3px 3px 10px #000",
+      }}
+    >
       <Card.Title style={{ textAlign: "center", marginTop: "1rem" }}>
         Loyalty Card
       </Card.Title>
@@ -21,22 +28,28 @@ function Loyalty({ data }) {
           <Col>
             <ListGroup className="list-group-flush" style={{ width: "100%" }}>
               <ListGroupItem>
-                Points: {loyalty_info.points_earned}{" "}
+                <span className="box">Points:</span>{" "}
+                {loyalty_info.points_earned}{" "}
               </ListGroupItem>
               <ListGroupItem>
-                Spent Points : {loyalty_info.points_spend}
+                <span className="box">Spent Points :</span>{" "}
+                {loyalty_info.points_spend}
               </ListGroupItem>
               <ListGroupItem>
-                Remaining Points : {loyalty_info.remaining_point}
+                <span className="box">Remaining Points :</span>{" "}
+                {loyalty_info.remaining_point}
               </ListGroupItem>
               <ListGroupItem>
-                Overnight Stay : {loyalty_info.overnight_stay}
+                <span className="box">Overnight Stay :</span>{" "}
+                {loyalty_info.overnight_stay}
               </ListGroupItem>
               <ListGroupItem>
-                Night Stay : {loyalty_info.target_night_stay}
+                <span className="box">Night Stay :</span>{" "}
+                {loyalty_info.target_night_stay}
               </ListGroupItem>
               <ListGroupItem>
-                Earned Night Stay : {loyalty_info.earned_night_stay}
+                <span className="box">Earned Night Stay :</span>{" "}
+                {loyalty_info.earned_night_stay}
               </ListGroupItem>
             </ListGroup>
           </Col>

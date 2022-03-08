@@ -8,6 +8,7 @@ import Modal from "../components/Modal";
 import Loading from "../components/Loading";
 
 function Survey() {
+  const [global, setGlobal] = useState(true);
   const [show, setShow] = useState(false);
   const [surveyData, setSurveyData] = useState("");
   const [postData, setPostData] = useState([]);
@@ -87,6 +88,8 @@ function Survey() {
                 surveyData={item}
                 postData={postData}
                 setPostData={setPostData}
+                setGlobal={setGlobal}
+                global={global}
               />
             );
           }
